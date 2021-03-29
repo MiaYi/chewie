@@ -124,6 +124,7 @@ class ChewieState extends State<Chewie> {
 
   Future<dynamic> _pushFullScreenWidget(BuildContext context) async {
     final TransitionRoute<void> route = PageRouteBuilder<void>(
+      settings: RouteSettings(name: "CanRotate"),
       pageBuilder: _fullScreenRoutePageBuilder,
     );
 
